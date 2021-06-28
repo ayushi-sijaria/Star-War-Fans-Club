@@ -1,12 +1,14 @@
 .movie {
-     margin: 1rem;
-     padding: 1rem;
+     margin: 50px;
+     margin-left: 220px;
+     padding: 15px;
      background-color: #230052;
      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
      border-radius: 12px;
      text-align: center;
      color: white;
-     height: 228px;
+     height: 225px;
+     
    }
    
    .movie h2 {
