@@ -17,9 +17,10 @@ NOTE: To check the ErrorModal case, make some random change in api of any of the
 
 **Steps to run the application**
 1. Git clone the project in desired location.
-2. Navigate to the project location usid CMD or the terminal provided in IDE.
-3. Run npm install.
-4. Run npm start .
+git clone https://github.com/ayushi-sijaria/Star-War-Fans-Club.git
+3. Navigate to the project location usid CMD or the terminal provided in IDE.
+4. Run npm install. This will install all the required dependencies.
+5. Run npm start .
 A new tab will open in your browser http://localhost:3000 which will run the application in your machine.
 
 In case of any issues in accessing the application, reach out at ayushi17.sijaria@gmail.com
