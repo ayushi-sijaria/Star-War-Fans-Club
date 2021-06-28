@@ -1,6 +1,6 @@
 .movie {
      margin: 50px;
-     margin-left: 220px;
+     margin-left: 200px;
      padding: 15px;
      background-color: #230052;
      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -22,7 +22,12 @@
      font-size: 25px;
    }
    .movie:hover
-{
-  background-color: #ab8ad6;
-  color: #5f5906;
-}
+  {
+    background-color: #ab8ad6;
+    color: #5f5906;
+  }
+
+  .movie button
+  {
+    
+  }

@@ -1,13 +1,15 @@
 import React from 'react';
+import { Button } from 'react-bootstrap'
 import classes from './Movie.module.css';
 
 const Movie = (props) => {
   return (
-    <li className={classes.movie} >
+    <div className={classes.movie} >
       <h2>{props.title}</h2>
       <p>Director: {props.director}</p>
       <p>Producer: {props.producer}</p>
-    </li>
+      <Button onClick={props.onClick}>View More</Button>
+    </div>
   );
 };
 

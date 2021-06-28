@@ -2,7 +2,7 @@ import { Form, Button, FormControl } from 'react-bootstrap'
 const Search = (props) => {
      return (
           <div>
-               <Form className="d-flex" style={{margin: '10px'}}>
+               <Form className="d-flex" style={{margin: '20px'}}>
                     <FormControl
                     type="search"
                     placeholder="Search with movie title..."
