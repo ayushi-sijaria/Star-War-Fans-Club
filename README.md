@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+Welcome to Star War Fans Club ! 
+This project is a SPA implemented using React and React-Hooks(no usage of class based components).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Features:**
 
-## Available Scripts
+1. Star War Fans club allow user to fetch Star War movies and see there details.
+2. HTTP requests are demonstrated in two ways:
+            i) featch API
+            ii) Using third party library: Axios
+3. Current date and time will always be visible to the user.
+4. **Pagination** - the API returns the data for 6 movies and at a time user can see data about 2 movies. User can click on next or previous arrow key at the botton of page to visit next or previous page.
+5. **Search** - The user can search for a movie by movie name using any (sub)string.
+6. If there are no search results, a sorry page will be shown to user (try this)  
+7. A user can see details of a particular movie by clicking on the 'View More' button.
+8. If the API is broken or some network issue is there, an Error Modal will appear which can be closed by clicking the 'Okay' button or by clicking outside the modal.
+NOTE: To check the ErrorModal case, make some random change in api of any of the HTTP request.
 
-In the project directory, you can run:
+**Steps to run the application**
+1. Git clone the project in desired location.
+2. Navigate to the project location usid CMD or the terminal provided in IDE.
+3. Run npm install.
+4. Run npm start .
+A new tab will open in your browser http://localhost:3000 which will run the application in your machine.
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In case of any issues in accessing the application, reach out at ayushi17.sijaria@gmail.com
