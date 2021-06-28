@@ -6,15 +6,21 @@
      border-radius: 12px;
      text-align: center;
      color: white;
+     height: 228px;
    }
    
    .movie h2 {
-     font-size: 2rem;
+     font-size: 50px;
      color: #f7e702;
    }
    
-   .movie h3 {
+   .movie p {
      color: #eccf77;
-     margin: 0;
-     font-size: 1rem;
+     margin: 5px;
+     font-size: 25px;
    }
+   .movie:hover
+{
+  background-color: #ab8ad6;
+  color: #5f5906;
+}
