@@ -6,7 +6,6 @@ import classes from './MovieList.module.css';
 
 const MovieList = (props) => {
   const history = useHistory()
-  console.log(props.movies)
   const movieDetailsHandler = (movieId) =>
   {
     history.push('/'+movieId)
@@ -15,7 +14,6 @@ const MovieList = (props) => {
     <div className={classes.main}>
       <Route path='/' exact>
       <ul className={classes['movies-list']}>
-        {console.log(props.movies)}
         {props.movies.slice(props.counter*2-2,props.counter*2).map((movie) => (
               <Movie
                 key={movie.id}
@@ -30,7 +28,6 @@ const MovieList = (props) => {
       <Route path='/:movieid' exact>
           <MovieDetails/>
       </Route>
-        
       </div>
   );
 };

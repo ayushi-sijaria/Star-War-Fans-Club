@@ -6,7 +6,6 @@ import classes from './MovieDetails.module.css'
 const MovieDetails = () => {
      const [movieDetail, setMovieDetail] = useState({})
      const params = useParams()
-     console.log(params.movieid)
      useEffect(() =>{
           axios.get(`https://swapi.dev/api/films/${params.movieid}`)
           .then(response => {
@@ -16,7 +15,6 @@ const MovieDetails = () => {
                
           })
       }, [params.movieid] );
-          console.log(movieDetail)
      return (
           <div className={classes.MovieDetail}>
                <h2>{movieDetail.title}</h2> 

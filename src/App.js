@@ -43,8 +43,7 @@ function App() {
       const response = await fetch('https://swapi.dev/api/films');
       if (!response.ok) {
         setError(true)
-      }
-      
+      }     
 
       const data = await response.json();
       const loadedMovies = [];
@@ -58,7 +57,6 @@ function App() {
           producer: m.producer
         });
       }
-      console.log(loadedMovies)
       setMaxCounter(loadedMovies.length/2)
       setMovies(loadedMovies);
       setFilteredMovies(loadedMovies)
@@ -77,7 +75,6 @@ function App() {
   {
     setFilteredMovies(movies.filter(m => m.title.includes(searchTerm))) 
     setMaxCounter(filteredMovies/2)
-    console.log(filteredMovies)
   }
 
   const clearError = () =>
