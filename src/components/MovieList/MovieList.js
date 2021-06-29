@@ -1,14 +1,20 @@
 import React from 'react';
-import Movie from '../Movie/Movie';
+import { useDispatch } from 'react-redux'
 import MovieDetails from '../MovieDetails/MovieDetails'
+import Movie from '../Movie/Movie';
 import { Route, useHistory } from 'react-router-dom'
 import classes from './MovieList.module.css';
 
 const MovieList = (props) => {
   const history = useHistory()
+  const dispatch = useDispatch()
+  const hideSearchBarHandler = () => {
+    dispatch({type: 'hideSearchBar'})
+  } 
   const movieDetailsHandler = (movieId) =>
   {
     history.push('/'+movieId)
+    hideSearchBarHandler()
   }
   return (
     <div className={classes.main}>

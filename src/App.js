@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { useSelector } from 'react-redux'
 import Header from './components/Header/Header'
 import Date from './components/UI/Date/Date'
 import Search from './components/Search/Search'
@@ -18,6 +19,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
   const [filteredMovies, setFilteredMovies] = useState([])
   const [error, setError] = useState(false)
+  const showSearchBar = useSelector(state => state.showSearchBar)
+  const showPagination = useSelector(state => state.showPagination)
 
   const incCounterHandler = () =>
   {
@@ -95,13 +98,13 @@ function App() {
     content = <Spinner/>;
   }  
   return (
-    <div className='App'>
+      <div className='App'>
       <Header/>
       <Date/>
       {error && <ErrorModal onClose={clearError}>No Movies Found.</ErrorModal>}
-      <Search searchTerm={searchTermHandler} search={searchHandler}/>
+      {showSearchBar && <Search searchTerm={searchTermHandler} search={searchHandler}/>}
       <section>{content}</section>
-      <Pagination onNext={incCounterHandler} onPrev={decCounterHandler}/>
+      {showPagination && <Pagination onNext={incCounterHandler} onPrev={decCounterHandler}/>}
       <Footer/>
     </div>
   );
