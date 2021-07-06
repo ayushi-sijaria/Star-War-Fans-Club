@@ -2,13 +2,13 @@ import { Form, Button, FormControl } from 'react-bootstrap'
 const Search = (props) => {
      return (
           <div>
-               <Form className="d-flex" style={{margin: '20px'}}>
+               <Form className="d-flex" style={{margin: '12px'}}>
                     <FormControl
                     type="search"
                     placeholder="Search with movie title..."
                     className="mr-2"
                     aria-label="Search"
-                    style={{margin: '10px', width: '350px'}}
+                    style={{margin: '8px', width: '350px'}}
                     onChange={props.searchTerm}
                     />
                     <Button 

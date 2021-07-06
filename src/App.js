@@ -102,9 +102,9 @@ function App() {
       <Header/>
       <Date/>
       {error && <ErrorModal onClose={clearError}>No Movies Found.</ErrorModal>}
-      {showSearchBar && <Search searchTerm={searchTermHandler} search={searchHandler}/>}
+      <Search searchTerm={searchTermHandler} search={searchHandler}/>
       <section>{content}</section>
-      {showPagination && <Pagination onNext={incCounterHandler} onPrev={decCounterHandler}/>}
+      <Pagination onNext={incCounterHandler} onPrev={decCounterHandler}/>
       <Footer/>
     </div>
   );

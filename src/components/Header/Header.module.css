@@ -1,8 +1,9 @@
 .header
 {
      color: rgb(50, 105, 107);
-     font-size: 100px;
+     font-size: 50px;
      text-align: center;
+     width:80%
      
 }
 .header:hover
