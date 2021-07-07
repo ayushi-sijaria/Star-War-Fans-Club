@@ -1,0 +1,21 @@
+.Card
+{
+     box-sizing: border-box;
+     border: 1px solid #aaa;
+     background-color: rgb(163, 201, 201);
+     border-radius: 5px;
+     width: 30%;
+     margin: auto;
+     margin-top: 20px;
+     padding-top: 10px;
+}
+
+.Card p 
+{
+     text-align: center;
+}
+
+.Card:hover 
+{
+     background-color: transparent;
+}
