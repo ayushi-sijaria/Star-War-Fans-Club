@@ -10,7 +10,7 @@
    
    .header nav {
      height: 100%;
-     left:400px
+     left:500px
    }
    
    .header ul {
@@ -35,4 +35,9 @@
      color: #95bcf0;
      padding-bottom: 0.25rem;
      border-bottom: 4px solid #95bcf0;
+   }
+  
+   .title
+   {
+     margin-right: 50px;
    }

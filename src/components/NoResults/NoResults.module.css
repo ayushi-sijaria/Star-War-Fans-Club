@@ -1,7 +1,7 @@
 .image
 {
-     height: 180px;
-     width: 180px;
+     height: 160px;
+     width: 170px;
      padding:0;
 }
 
@@ -10,6 +10,6 @@
      font-size: 20px;
      font-weight: bold;
      color: tomato;
-     margin-top: 30px;
+     margin-top: 15px;
      margin-left: 80px;
 }

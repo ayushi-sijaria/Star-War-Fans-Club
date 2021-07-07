@@ -4,7 +4,7 @@ const Header = () =>
 {
      return (
           <header className={classes.header}>
-               <div classname={classes.title}>STAR WARS FAN CLUB</div>
+               <div style={{marginRight: '280px'}}>STAR WARS FAN CLUB</div>
                <nav>
                     <ul>
                          <Link to='/home-page'>Home</Link>

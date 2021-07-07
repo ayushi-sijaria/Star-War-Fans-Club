@@ -1,7 +1,6 @@
 import React from 'react';
-import MovieDetails from '../MovieDetails/MovieDetails'
 import Movie from '../Movie/Movie';
-import { Route, useHistory, Switch } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import classes from './MovieList.module.css';
 
 const MovieList = (props) => {
@@ -10,11 +9,8 @@ const MovieList = (props) => {
   {
     history.push('/'+movieId)
   }
-  console.log('movie list')
   return (
     <div>
-      <Switch>
-        <Route path='/home-page' exact>
         <ul className={classes['movies-list']}>
           {props.movies.slice(props.counter*2-2,props.counter*2).map((movie) => (
                 <Movie
@@ -26,9 +22,6 @@ const MovieList = (props) => {
                 />         
           ))}
         </ul>
-        </Route>
-        
-        </Switch>
     </div>
   );
 };

@@ -79,7 +79,7 @@ function App() {
     content = <MoviesList movies={filteredMovies} counter={counter} />;
   }
   else{
-    content = <NoResults/>
+    content = <NoResults />
   }
   if (isLoading) {
     content = <Spinner/>;
