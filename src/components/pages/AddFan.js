@@ -1,19 +1,23 @@
 import React, {useState, useRef} from 'react'
 import axios from 'axios';
+import Spinner from '../UI/Spinner/Spinner'
 import classes from './AddFan.module.css'
 
 const AddFan = (props) => {
      const [enteredName, setenteredName] = useState('')
      const [enteredAge, setenteredAge] = useState('')
+     const [isLoading, setisLoading] = useState(false)
      const nameRef = useRef();
      const ageRef = useRef();
      const addHandler = data =>
           {
+          setisLoading(true)
           axios.post('https://react-http-2b2ab-default-rtdb.firebaseio.com//fans.json', data)
           .then(function (response) {
                alert('Successfully added !')
                setenteredName('')
                setenteredAge('')
+               setisLoading(false)
           })
           .catch(function (error) {
                console.log(error);
@@ -21,6 +25,11 @@ const AddFan = (props) => {
                ageRef.current.value=''
           });   
           }
+     if (isLoading)
+     {
+          return <Spinner />
+     }
+     
      return (<form className={classes.Form}>
                
                <h2>New Fan Registration</h2>

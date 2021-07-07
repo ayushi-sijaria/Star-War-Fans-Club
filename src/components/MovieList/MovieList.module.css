@@ -1,5 +1,6 @@
 
 .movies-list {
      margin: auto;
+     margin-top: 22px;
      display: flex;
    }
