@@ -1,4 +1,4 @@
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect, useHistory } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Date from './components/UI/Date/Date'
 import Footer from './components/Footer/Footer'
@@ -9,6 +9,7 @@ import MovieDetails from './components/MovieDetails/MovieDetails'
 import './App.css';
 
 function App() {
+  const history = useHistory()
   return (
       <div className='App'>
       <Header/>
@@ -21,7 +22,7 @@ function App() {
           <HomePage />
         </Route>
         <Route path = '/new-fan' exact>
-          <AddFan />
+          <AddFan onClose={() => history.push('/')}/>
         </Route>
         <Route path='/fans-list' exact>
           <FanList />
