@@ -1,20 +1,8 @@
-import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
-const UIreducer =(state = {showSearchBar : true, showPagination : true}, action) => {
-     switch (action.type)
-     {
-          case 'hideSearchBar': 
-          { 
-               return {
-                    showSearchBar : false,
-                    showPagination : false
-                    } 
-          }
+import { configureStore } from '@reduxjs/toolkit'
+import uiSlice from './ui-slice'
 
-          default: return state
-     }
-}
-
-const store = createStore(UIreducer, applyMiddleware(thunk))
+const store = configureStore({
+     reducer: {ui: uiSlice.reducer}
+})
 
 export default store
