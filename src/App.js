@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Date from './components/UI/Date/Date'
 import Footer from './components/Footer/Footer'
@@ -14,6 +14,9 @@ function App() {
       <Header/>
       <Date/>
       <Switch>
+        <Route path='/' exact>
+          <Redirect to='/home-page'/>
+        </Route>
         <Route path = '/home-page' exact>
           <HomePage />
         </Route>

@@ -31,7 +31,7 @@ const ViewFanList = () => {
           .catch(function (error) {
           })
      }
-     useEffect(() => {fetchList()}, [maxCounter,isLoading,list,counter])
+     useEffect(() => {fetchList()}, [])
 
      const incCounterHandler = () =>
      {
@@ -49,7 +49,7 @@ const ViewFanList = () => {
      }
      if(list.length<1)
      {
-          return <div style={{margin:'188px'}}>
+          return <div style={{margin:'150px'}}>
                <p>No fan found!!!</p>
                <p>Enroll yourself as one.</p>
           </div>

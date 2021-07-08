@@ -8,7 +8,7 @@ const Movie = (props) => {
       <h2>{props.title}</h2>
       <p>Director: {props.director}</p>
       <p>Producer: {props.producer}</p>
-      <Button style={{marginTop: '35px'}} onClick={props.onClick}>View More</Button>
+      <Button onClick={props.onClick}>View More</Button>
     </div>
   );
 };
